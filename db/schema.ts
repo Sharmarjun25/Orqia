@@ -55,11 +55,14 @@ export const tools = pgTable("tools", {
   enabled: boolean("enabled").default(true),
 
   createdAt: timestamp("created_at").defaultNow(),
-  updatedAt: timestamp("updated_at").defaultNow(),
-});
+  updatedAt: timestamp("updated_at").defaultNow()
+
+})
 
 export type User = typeof users.$inferSelect;
 export type NewUser = typeof users.$inferInsert;
 
 export type Tool = typeof tools.$inferSelect;
 export type NewTool = typeof tools.$inferInsert;
+
+

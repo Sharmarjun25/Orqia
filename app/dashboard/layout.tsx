@@ -7,7 +7,7 @@ function DashBoardlayout({ children }: any) {
         <SidebarProvider>
             <AppSidebar />
             <main className='w-full'>
-                <SidebarTrigger />
+                <SidebarTrigger /> 
                 {children}
             </main>
 
